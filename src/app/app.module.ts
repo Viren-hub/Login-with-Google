@@ -8,6 +8,7 @@ import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 @NgModule({
   declarations: [
     AppComponent
+    
   ],
   imports: [
     BrowserModule,
