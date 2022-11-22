@@ -1,0 +1,38 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+.input {
+    /* height: 50%; */
+    /* width: 100%; */
+    /* background-color: red; */
+    
+}
+.input input{
+    display: block;
+    margin: 6px auto;
+    padding: 8px;
+    width: 60%;
+}
+.input button{
+    padding: 8px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.google-btn{
+    height: 50vh;
+    width: 30vw;
+    border: 1px solid black;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 1px 5px 0.5px;
+    flex-direction: column;
+}
