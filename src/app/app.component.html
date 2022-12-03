@@ -1,13 +1,8 @@
-<!-- 75750261722-bmpuf8r7m19oo22qeeui6cu2edh5mt4u.apps.googleusercontent.com -->
-<!-- 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 -->
+
 <div class="main">
     <div class="google-btn">
-        <div class="input" *ngIf="!user">
-            <p>Please login with Google</p>
-            <!-- <h4>Login</h4> -->
-            <input type="text" disabled placeholder="Email">
-            <input type="text" disabled placeholder="Password">
-            <button disabled>Login</button>
+        <div class="input" *ngIf="!user">        
+            <app-login></app-login>
             <p>---------------------------- OR ----------------------------</p>
         </div>
         <div >
@@ -15,6 +10,7 @@
         </div>
 
         <div *ngIf="user" > 
+                <app-google-img [Data]="user.email"></app-google-img>
                 <h3 style="color: green;">Login Success</h3>    
                 <h5>{{user.name}}</h5>
                 <h5>{{user.email}}</h5>

@@ -4,19 +4,27 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
+import { GoogleImgComponent } from './Components/google-img/google-img.component';
+import {LoginAuthService} from './Services/login-auth.service'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './Components/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoogleImgComponent,
+    LoginComponent
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    SocialLoginModule
+    SocialLoginModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
-  providers: [{
+  providers: [LoginAuthService,{
     provide: 'SocialAuthServiceConfig',
     useValue: {
       autoLogin: false,
